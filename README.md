@@ -1,2 +1,2 @@
-# kanclouddocsave
-save kancloud document to location for HTML/DOC/PDF ...
+# 保存看云文档（ kancloud document ）到本地
+ 好多小伙伴看到许多的看云文档（kancloud document），想下载下来，但是没有权限。我也遇到过，而且是只有观察者权限，需要等的文档。这样用抓取就不合适了，而且文档因为要登录，网页转chm的插件也就不好用了，而且看云的数据有经过编码，虽然不是加密，但是普通的没有二次专门针对的爬取软件还真会抓瞎。所以我开发了一个chrome插件（360应该也可以用，因为他有全家桶所以我就不测试了，只针对chrome测试发表）。希望对大家有用
