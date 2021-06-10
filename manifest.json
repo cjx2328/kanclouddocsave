@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "可以滚动下拉加载的事项说",
   "browser_action": {
-    "default_icon": "ico.png"
+    "default_icon": "icon.png"
   }
 
 ,
@@ -17,7 +17,8 @@
       "js": [
       	"jquery-1.8.3.min.js",
       	"markdown.js",
-
+      	"html2canvas.js",
+      	"jspdf.min.js",
       	"myscript.js"
 
       ],

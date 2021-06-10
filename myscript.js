@@ -1,10 +1,8 @@
 /// 添加一个保存按钮
 
-var addhtmlsdata = ' <div class="showbutton"><div class="save_btn fulicollort" id="savedoctolocal">保存</div><div class="save_btn fulicollort" id="downloaddoc">下载</div></div>';
+var addhtmlsdata = '<div class="showbutton"><div class="save_btn fulicollort" id="savedoctolocal">保存</div><div class="save_btn fulicollort" id="downloaddoc">下载</div></div>';
 
 $("body").append(addhtmlsdata);
-
-
 
 
 var locationdata = location.href;
@@ -13,11 +11,34 @@ var locationdata = location.href;
 
 
 $("#savedoctolocal").on( "click",function(){
-   var nextpagelinks = $("script[type='application/payload+json']").html();
-   var jsondata = JSON.parse(nextpagelinks);
-    console.log(jsondata.article.content);
-    console.log(markdown.toHTML(jsondata.article.content));
+    const nextpagelinks = $("script[type='application/payload+json']").html();
+    const jsondata = JSON.parse(nextpagelinks);
+    // console.log(jsondata.article.content);
+    const htmldata = markdown.toHTML(jsondata.article.content);
+    console.log(htmldata);
     console.log(jsondata);
+
+
+    const pdf = new jsPDF('p', 'pt', 'letter');
+
+
+    let canvas = pdf.canvas;
+
+
+            pdf.output('datauristring');
+
+
+    // pdf.addHTML(htmldata,function() {
+    //     var string = pdf.output('datauristring');
+    //     $('.preview-pane').attr('src', string);
+    // });
+
+
+
+    pdf.save( 'demo.pdf');
+
+
+
 });
 
 
