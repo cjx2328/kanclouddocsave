@@ -1,0 +1,31 @@
+{
+  "name": "抓取看云文档",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "可以滚动下拉加载的事项说",
+  "browser_action": {
+    "default_icon": "ico.png"
+  }
+
+,
+"content_scripts": [
+    {
+      "matches": [
+        "https://www.kancloud.cn/*",
+        "https://kancloud.ali-cache.com/*"
+      ],
+      "js": [
+      	"jquery-1.8.3.min.js",
+      	"markdown.js",
+
+      	"myscript.js"
+
+      ],
+      "css":[
+         "commone.css"
+      ]
+    }
+  ]
+
+}
+

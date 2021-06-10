@@ -1,0 +1,64 @@
+.showbutton{
+	width:100px;
+	height:35px;
+	z-index: 9999;
+	display: block;
+	position: fixed;
+	bottom:0;
+	left:0;
+	background: #1BA39C;
+	color:#fff;
+	cursor:pointer;
+	text-align:center;
+	line-height: 35px;
+
+}
+.save_btn{
+	display: block;
+	width: 50px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	float: left;
+}
+.fulicollort:hover{
+
+	background: #D91E18;
+}
+
+#showlinks{
+	width:1200px;
+	margin:0 auto;
+	height:50px;
+	line-height: 50px;
+
+text-align: center;
+color:#fff;
+top:0;
+left:0;
+	position: absolute;
+
+
+}
+
+
+.autosendmessages{
+	width:100px;
+	height:50px;
+	display: block;
+	position: fixed;
+	top:0;
+	left:0;
+	background: #1BA39C;
+	color:#fff;
+	cursor:pointer;
+	text-align:center;
+	line-height: 50px;
+
+}
+
+.autosendmessages:hover{
+
+	background: #D91E18;
+}
+
