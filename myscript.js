@@ -1,6 +1,6 @@
 /// 添加一个保存按钮
 
-var addhtmlsdata = '<script src="https://cdn.bootcdn.net/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script><div class="showbutton"><div class="save_btn fulicollort" id="savedoctolocal">保存</div><div class="save_btn fulicollort" id="downloaddoc">下载</div></div>';
+var addhtmlsdata = ' <div class="showbutton"><div class="save_btn fulicollort" id="savedoctolocal">保存</div><div class="save_btn fulicollort" id="downloaddoc">下载</div></div>';
 
 $("body").append(addhtmlsdata);
 
