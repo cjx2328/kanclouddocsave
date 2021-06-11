@@ -18,20 +18,11 @@ $("#savedoctolocal").on( "click",function(){
     console.log(htmldata);
     console.log(jsondata);
 
-
     const pdf = new jsPDF('p', 'pt', 'letter');
-
 
     let canvas = pdf.canvas;
 
-
             pdf.output('datauristring');
-
-
-    // pdf.addHTML(htmldata,function() {
-    //     var string = pdf.output('datauristring');
-    //     $('.preview-pane').attr('src', string);
-    // });
 
 
 
