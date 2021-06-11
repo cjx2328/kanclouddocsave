@@ -22,9 +22,7 @@ $("#savedoctolocal").on( "click",function(){
 
     let canvas = pdf.canvas;
 
-            pdf.output('datauristring');
-
-
+     pdf.output('datauristring');
 
     pdf.save( 'demo.pdf');
 
