@@ -19,11 +19,8 @@ $("#savedoctolocal").on( "click",function(){
     console.log(jsondata);
 
     const pdf = new jsPDF('p', 'pt', 'letter');
-
     let canvas = pdf.canvas;
-
-     pdf.output('datauristring');
-
+    pdf.output('datauristring');
     pdf.save( 'demo.pdf');
 
 
